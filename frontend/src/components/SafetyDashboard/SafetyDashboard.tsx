@@ -23,7 +23,7 @@ const stats = [
   },
   {
     icon: <FaFireExtinguisher />,
-    value: "4+",
+    value: "5+",
     label: "Years Experience",
   },
 ];

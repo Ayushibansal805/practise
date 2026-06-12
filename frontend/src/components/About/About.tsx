@@ -94,7 +94,7 @@ const About = () => {
           <div className="flex items-center justify-center">
 
             <img
-  src="/barun.jpg"
+  src="/barun.jpeg"
   alt="Barun"
   className="
     h-[500px]

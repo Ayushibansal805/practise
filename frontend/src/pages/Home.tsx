@@ -8,6 +8,9 @@ import Certifications from "../components/Certifications/Certifications";
 import ControlRoom from "../components/ControlRoom/ControlRoom";
 import Projects from "../components/Projects/Projects";
 import Contact from "../components/Contact/Contact";
+import Gallery from "../components/Gallery/Gallery";
+import Achievements from "../components/Achievements/Achievements";
+import Footer from "../components/Footer/Footer";
 const Home = () => {
   return (
     <>
@@ -16,11 +19,14 @@ const Home = () => {
   <SafetyDashboard />
   <About />
   <Experience />
+    <Gallery />
+    
   <Projects />
   <ControlRoom />
   <EmergencyFlow />
   <Certifications />
   <Contact />
+  <Footer />
     </>
   );
 };
