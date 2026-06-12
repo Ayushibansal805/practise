@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #020617;
+  color: white;
+  font-family: Inter, sans-serif;
+}
+
+.fire-gradient {
+  background: linear-gradient(
+    135deg,
+    #dc2626,
+    #ea580c,
+    #f97316
+  );
+}
+
+.glass {
+  backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.command-grid {
+  background-image:
+    linear-gradient(rgba(220,38,38,.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(220,38,38,.08) 1px, transparent 1px);
+
+  background-size: 50px 50px;
+}
+.radar {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,.1);
+  position: relative;
+}
+
+.radar::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  border-radius:50%;
+  background:conic-gradient(
+    transparent,
+    rgba(255,0,0,.4)
+  );
+
+  animation:spin 4s linear infinite;
+}
+
+@keyframes spin{
+  from{
+    transform:rotate(0deg);
+  }
+  to{
+    transform:rotate(360deg);
+  }
+}
