@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import {
-  FaShieldAlt,
   FaBuilding,
   FaClipboardCheck,
 } from "react-icons/fa";
