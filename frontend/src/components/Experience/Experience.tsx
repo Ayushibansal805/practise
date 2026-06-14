@@ -55,7 +55,7 @@ const Experience = () => {
           {experiences.map((item) => (
             <div
               key={item.company}
-              className="relative pl-20 mb-16"
+              className="relative pl-16 md:pl-20 mb-16"
             >
               <div
                 className="
@@ -88,7 +88,7 @@ const Experience = () => {
                   {item.year}
                 </p>
 
-                <h3 className="text-3xl font-bold mt-2">
+                <h3 className="text-2xl md:text-3xl font-bold mt-2">
                   {item.company}
                 </h3>
 

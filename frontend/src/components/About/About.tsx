@@ -40,7 +40,7 @@ const About = () => {
               About Me
             </p>
 
-            <h2 className="mt-4 text-5xl font-bold">
+            <h2 className="mt-4 text-4xl md:text-5xl font-bold">
               Dedicated Fire &
               <br />
               Life Safety Professional

@@ -57,7 +57,7 @@ const Gallery = () => {
             Field Operations
           </p>
 
-          <h2 className="mt-4 text-5xl font-bold">
+          <h2 className="mt-4 text-4xl md:text-5xl font-bold">
             Training & Mock Drills
           </h2>
 
@@ -92,7 +92,7 @@ const Gallery = () => {
                 src={item.image}
                 alt={item.title}
                 className="
-                h-[280px]
+                h-[220px] md:h-[280px]
                 w-full
                 object-cover
                 transition-all

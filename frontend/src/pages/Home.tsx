@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 import Navbar from "../components/Navbar/Navbar";
 import Hero from "../components/Hero/Hero";
 import About from "../components/About/About";
@@ -11,22 +13,56 @@ import Contact from "../components/Contact/Contact";
 import Gallery from "../components/Gallery/Gallery";
 import Achievements from "../components/Achievements/Achievements";
 import Footer from "../components/Footer/Footer";
+import Loader from "../components/Loader/Loader";
+import Cursor from "../components/Cursor/Cursor";
+import ProgressBar from "../components/ProgressBar/ProgressBar";
+import BackToTop from "../components/BackToTop/BackToTop";
 const Home = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1800);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
+
   return (
     <>
-      <Navbar />
-  <Hero />
-  <SafetyDashboard />
-  <About />
-  <Experience />
-    <Gallery />
     
-  <Projects />
-  <ControlRoom />
-  <EmergencyFlow />
-  <Certifications />
-  <Contact />
-  <Footer />
+    <ProgressBar />
+      <Cursor />
+  
+      <Navbar />
+
+      <Hero />
+
+      <SafetyDashboard />
+
+      <About />
+
+      <Experience />
+
+      <Gallery />
+
+      <Achievements />
+
+      <Projects />
+
+      <ControlRoom />
+
+      <EmergencyFlow />
+
+      <Certifications />
+
+      <Contact />
+      <BackToTop />
+      <Footer />
     </>
   );
 };

@@ -12,7 +12,7 @@ const Hero = () => {
       className="
       relative
       flex
-      min-h-[90vh]
+      min-h-screen md:min-h-[90vh]
       items-center
       overflow-hidden
       command-grid
@@ -53,7 +53,7 @@ const Hero = () => {
         relative
         mx-auto
         grid
-        max-w-7xl
+        max-w-7xl px-6 md:px-8
         gap-16
         px-8
         md:grid-cols-[1.3fr_0.7fr]
@@ -96,8 +96,7 @@ const Hero = () => {
 
           <h1
             className="
-            text-6xl
-            md:text-7xl
+            text-5xl md:text-7xl
             font-black
             leading-none
             "
@@ -120,7 +119,7 @@ const Hero = () => {
             {heroData.tagline}
           </p>
 
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="mt-10 flex flex-col sm:flex-row gap-4">
 
             <div
               className="
@@ -156,20 +155,36 @@ const Hero = () => {
 
           </div>
 
-          <button
-            className="
-            mt-10
-            rounded-xl
-            bg-red-600
-            px-8
-            py-4
-            font-semibold
-            transition
-            hover:bg-red-700
-            "
-          >
-            Explore Experience
-          </button>
+           <a
+    href="#experience"
+    className="
+    rounded-xl
+    border
+    border-slate-700
+    px-8
+    py-4
+    font-semibold
+    transition-all
+    hover:border-red-500
+    "
+  >
+    View Experience
+  </a>
+  <a
+  href="/Barun-Dhyani-Resume.pdf"
+  target="_blank"
+  className="
+  rounded-xl
+  border
+  border-slate-700
+  px-8
+  py-4
+  font-semibold
+  hover:border-red-500
+  "
+>
+  Download Resume
+</a>
         </motion.div>
 
         <motion.div
@@ -178,18 +193,18 @@ const Hero = () => {
   transition={{ duration: 0.8 }}
   className="flex items-center justify-center"
 >
-  <div className="grid gap-6 w-full max-w-md">
+  <div className="w-full max-w-md space-y-5">
 
     <div
       className="
-      glass
       rounded-3xl
-      p-8
       border
       border-red-500/20
+      bg-slate-900/80
+      p-8
       "
     >
-      <p className="text-slate-400">
+      <p className="text-slate-400 text-sm uppercase">
         Current Position
       </p>
 
@@ -200,74 +215,55 @@ const Hero = () => {
       <p className="mt-2 text-red-500">
         JLL
       </p>
+
+      <div className="mt-6 h-px bg-slate-700" />
+
+      <p className="mt-4 text-slate-300">
+        Leading Fire & Life Safety operations
+        across commercial properties,
+        emergency response planning,
+        compliance management and training.
+      </p>
     </div>
 
     <div className="grid grid-cols-2 gap-4">
 
-      <div
-        className="
-        glass
-        rounded-2xl
-        p-6
-        text-center
-        "
-      >
-        <h3 className="text-4xl font-bold text-red-500">
-          16+
+      <div className="rounded-2xl bg-slate-900 p-6 text-center border border-slate-800">
+        <h3 className="text-3xl font-bold text-red-500">
+          16
         </h3>
 
-        <p className="mt-2 text-slate-400 text-sm">
-          Buildings Managed
+        <p className="mt-2 text-sm text-slate-400">
+          Buildings
         </p>
       </div>
 
-      <div
-        className="
-        glass
-        rounded-2xl
-        p-6
-        text-center
-        "
-      >
-        <h3 className="text-4xl font-bold text-red-500">
+      <div className="rounded-2xl bg-slate-900 p-6 text-center border border-slate-800">
+        <h3 className="text-3xl font-bold text-red-500">
           50+
         </h3>
 
-        <p className="mt-2 text-slate-400 text-sm">
-          Safety Audits
+        <p className="mt-2 text-sm text-slate-400">
+          Audits
         </p>
       </div>
 
-      <div
-        className="
-        glass
-        rounded-2xl
-        p-6
-        text-center
-        "
-      >
-        <h3 className="text-4xl font-bold text-red-500">
+      <div className="rounded-2xl bg-slate-900 p-6 text-center border border-slate-800">
+        <h3 className="text-3xl font-bold text-red-500">
           100+
         </h3>
 
-        <p className="mt-2 text-slate-400 text-sm">
-          Employees Trained
+        <p className="mt-2 text-sm text-slate-400">
+          Personnel Trained
         </p>
       </div>
 
-      <div
-        className="
-        glass
-        rounded-2xl
-        p-6
-        text-center
-        "
-      >
-        <h3 className="text-4xl font-bold text-red-500">
+      <div className="rounded-2xl bg-slate-900 p-6 text-center border border-slate-800">
+        <h3 className="text-3xl font-bold text-red-500">
           4+
         </h3>
 
-        <p className="mt-2 text-slate-400 text-sm">
+        <p className="mt-2 text-sm text-slate-400">
           Years Experience
         </p>
       </div>
