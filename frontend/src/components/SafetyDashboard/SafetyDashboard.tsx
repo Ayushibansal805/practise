@@ -13,7 +13,7 @@ const stats = [
   },
   {
     icon: <FaUsers />,
-    value: "100+",
+    value: "500+",
     label: "Employees Trained",
   },
   {

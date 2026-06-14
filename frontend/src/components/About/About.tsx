@@ -54,7 +54,7 @@ const About = () => {
             </p>
 
             <p className="mt-6 text-lg leading-8 text-slate-400">
-              Currently leading safety operations
+              Currently leading fire and safety
               across multiple commercial buildings
               while ensuring compliance with
               industry standards and emergency

@@ -210,7 +210,7 @@ const Contact = () => {
             </h3>
 
             <p className="text-slate-400">
-              Delhi NCR, India
+              Gurugram, India
             </p>
           </div>
         </div>
